@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Smythe", system-ui;
+  background-color: #666666;
+}
+
+/*Utility classes*/
+.zero-margin-t {
+  margin-top: 0;
+}
+
+.zero-margin-b {
+  margin-bottom: 0;
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+/*Typography and icons*/
+
+h1 {
+  font-size: 39px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.emoji {
+  font-size: 80px;
+}
+
+.price,
+.action-btn,
+.modal-inner h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fa-plus {
+  font-size: 30px;
+}
+
+i {
+  cursor: pointer;
+}
+
+.action-btn,
+.modal-inner h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Layout*/
+.container {
+  width: 700px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.header {
+  background-image: url("images/hamburguer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 90%;
+  color: #fff;
+  padding: 50px; /*Use heigth migth be better*/
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #d2d2d2;
+  gap: 20px;
+  padding: 50px 0 50px;
+}
+
+.emoji {
+  width: 20%;
+  text-align: center;
+}
+
+.menu-info {
+  margin-right: auto;
+}
+
+.fa-plus {
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px black;
+  cursor: pointer;
+}
+
+.order-section {
+  text-align: center;
+  padding: 50px 0;
+  visibility: hidden;
+  height: 400px;
+}
+
+.order-info,
+.order-total-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.order-section .price {
+  margin-left: auto;
+}
+
+.order-total-price {
+  border-top: 2px solid #393333;
+  padding-top: 20px;
+}
+
+.action-btn {
+  background-color: #16db99;
+  border: none;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.order-complete {
+  width: 100%;
+  background-color: #ecfdf5;
+  color: #065f46;
+  font-size: 32px;
+  padding: 20px 0;
+  border-radius: 3px;
+}
+
+/*Modal*/
+
+.modal {
+  display: none;
+  width: 600px;
+  height: 500px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+  box-shadow: 0px 0px 100px 5px #666;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.modal-inner {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.modal-inner h2 {
+  margin: 10px 0 40px;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border: 1px solid #757575;
+  border-radius: 3px;
+  color: #757575;
+}

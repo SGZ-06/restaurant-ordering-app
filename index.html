@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!--App Banner-->
+      <div class="container header">
+        <h1 class="zero-margin-t zero-margin-b light-font">Jimmy's Dinner</h1>
+        <h2 class="zero-margin-t zero-margin-b light-font">
+          The best burguers and pizzas in town
+        </h2>
+      </div>
+    </header>
+    <main>
+      <section>
+        <!--Menu Section-->
+        <div class="container" id="menu-section"></div>
+      </section>
+      <section>
+        <!--Order Section-->
+        <div class="container">
+          <div class="order-section" id="order-section">
+            <h3 class="zero-margin-b zero-margin-t">Your Order</h3>
+            <div id="order-products"></div>
+            <div class="order-total-price">
+              <h3 class="product zero-margin-b zero-margin-t">Total price:</h3>
+              <div class="price" id="total-price"></div>
+            </div>
+            <button class="action-btn" id="order-purchase-btn">
+              Complete order
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Modal-->
+    <div class="modal">
+      <div class="modal-inner">
+        <h2>Enter card details</h2>
+        <form id="modal-form">
+          <input
+            type="text"
+            id="name"
+            name="user-name"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="number"
+            id="card"
+            name="user-card"
+            placeholder="Enter your card number"
+            required
+          />
+          <input
+            type="number"
+            id="cvv"
+            name="user-cvv"
+            placeholder="Enter CVV"
+            required
+          />
+
+          <button class="action-btn" id="pay-btn">Pay</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
